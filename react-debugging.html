@@ -33,7 +33,7 @@
           if(hand.indexOf(draw) === -1){
             this.setState({hand: [...hand, draw]})
           } else if(hand.length !== 52){
-            this.drawCard()
+            this.drawCard()  
           } else {
             alert("All cards have been dealt.")
           }
