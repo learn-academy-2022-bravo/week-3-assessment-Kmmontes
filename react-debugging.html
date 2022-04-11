@@ -17,11 +17,7 @@
   </head>
   <body>
     <div id="react-container"></div>
-      <script type="text/babel">
-
-
-      // file: src/App.js
-      class App extends React.Component{
+    
         constructor(props){
           super(props)
           this.state = {
@@ -63,11 +59,13 @@
           // No need to change anything ABOVE this line ^
 
           return(
+            <>
             <h1>Draw a Card</h1>
-            <button onClick={}>
+
+            <button onClick={this.state.drawCard}>
               Click to Draw a Card
             </button>
-            <button onClick={shuffle}>
+            <button onClick={this.state.shuffle}>
               Return Cards and Shuffle Deck
             </button>
             <div style={handStyles}>
@@ -79,6 +77,7 @@
                 )
               })}
             </div>
+            </>
           )
         }
       }
